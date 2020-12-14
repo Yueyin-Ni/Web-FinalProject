@@ -1,0 +1,294 @@
+/* style = "position: absolute;" */
+#container{
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    background-size: contain;
+}
+
+
+.firstpicture img{
+    position: relative;
+    padding-top: 0%;
+    top: -50px;
+    width: 100%/3;
+    height: 80vh;
+    float: left; 
+    z-index: 2;
+    /* margin: auto; */
+    /* position: relative; */
+}
+
+.secondpicture img{
+    padding-top: 0%;
+    top: -50px;
+    position: relative;
+    width: 100%/3;
+    height: 80vh;
+    float: left;
+    z-index: 2;
+    /* margin: middle; */
+}
+
+.thirdpicture img{
+    padding-top: 0%;
+    top: -50px;
+    position: relative;
+    width: 100%/3;
+    height: 80vh;
+    float: left;
+    z-index: 2;
+} 
+
+.wu{
+    color: white;
+    padding-bottom: 10%;
+    font-size: 1vw;
+    z-index: 10;
+    /* bottom: 100px; */
+
+}
+
+.wu p{
+    font-size: 1vw;;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'helvetica neue';
+    font-size: 20px;
+  }
+  
+body {
+    color: white;
+    margin: 0;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.question{
+    font-size: 1.4vw;
+}
+
+
+h1 {
+margin-top: 0;
+text-align: center;
+}
+
+
+h3 {
+    text-align: center;
+    margin-top: 500px;
+    }
+
+h4{
+    text-align: left;
+    margin-top: 300px;
+}
+
+h5{
+    font-size: 2vw;
+    color: white;
+}
+h6{
+    font-size: 1.5vw;
+    color: white;
+
+}
+
+.question3 h2{
+    padding-top: 0%;
+    top: -10px;
+    text-align: left;
+    font-size: 2vw;
+    margin-top: -15px;
+}
+
+
+section {
+    padding: 5% 10%;
+    height: 100vh;
+    width: 100vw;
+}
+
+section:first-of-type {
+background-color: unset;
+}
+
+section:nth-of-type(2) {
+background: black;
+}
+
+section:nth-of-type(3) {
+background: black;
+}
+
+section:nth-of-type(4) {
+background: black;
+}
+
+section:nth-of-type(5) {
+background: black;
+}
+
+section:nth-of-type(6) {
+background: black;
+}
+
+
+section:nth-of-type(7) {
+    background-color: unset;
+}
+
+
+nav {
+position: fixed;
+right: 5%;
+top: 30%;
+z-index: 1;
+}
+
+ul {
+list-style-type: none;
+}
+
+a {
+    color: rgb(253, 209, 255);
+    }
+b{
+background: white;
+border-radius: 50%;
+cursor: pointer;
+display: block;
+margin-bottom: 10px;
+height: 10px;
+width: 10px;
+/* hide text  */
+text-indent: -9999px;
+}
+
+nav a.current {
+background: grey;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+.video-container > video {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.endbackground {
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+.endbackground > video {
+    display: block;
+    position: absolute;
+    left: 33%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+
+
+
+.rect {
+background: black;
+height: 20vh;
+width: 500px;
+}
+
+.align-left {
+float: center;
+margin-right: 20px;
+}
+
+.align-right {
+float: right;
+margin-top: 10vh;
+margin-left: 20px;
+}
+
+.slide-in {
+opacity: 0;
+transition: all .5s;
+}
+
+.align-left.slide-in {
+transform: translateX(-50%) scale(0.95);
+}
+
+.align-right.slide-in {
+transform: translateX(50%) scale(0.95);
+}
+
+.slide-in.active {
+opacity: 1;
+transform: translateX(0%) scale(1);
+}
+
+.next img{
+    width: 7vw;
+    height: 3vw;
+}
+
+.ticket img{
+    position: relative;
+    top:10px;
+    left: 300px;
+    width: 40vw;
+    height: 40vh;
+
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.video-container > video {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+@media screen and (max-aspect-ratio: 1920/1080) {
+    .video-container > video {
+      height: 100%;
+    }
+}
+
+@media screen and (min-aspect-ratio: 1920/1080) {
+    .video-container > video {
+        width: 100%;
+    }
+}
